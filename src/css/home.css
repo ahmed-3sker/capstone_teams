@@ -77,3 +77,67 @@ ul li a{
     background-color: #2185D5;
     color: #F3F3F3;
 }
+
+
+
+.status-team {
+    border-top: 3px solid #2185D5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60vh;
+    width: 100%;
+    background-color: #F3F3F3;
+    color: #3A4750;
+}
+
+.status {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+}
+.members {
+    min-width: 0;     
+    width: 100%;
+}
+.team {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    min-width: 0; 
+}
+
+.both {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 350px;
+    min-width: 350px;
+
+    height: 100%;
+    margin-right: 10px;
+}
+
+.inp {
+    box-sizing: border-box;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #303841;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+
+
+.contact-lead{
+    display: flex;
+    border-top: 3px solid #2185D5;
+    align-items: center;
+}
