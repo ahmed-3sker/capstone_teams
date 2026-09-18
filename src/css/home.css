@@ -17,21 +17,24 @@ header{
     width: 400px;
 
 }
+
+
+
 .items-links{
     display: flex;
     justify-content: space-around;
     color: #F3F3F3;
-    width: 100%;
+    width: 400px;
     align-items: center;
     height: 100%;
     list-style: none;
     margin: 10px 10px;
-   
-   
 }
+
 ul li a{
     text-decoration: none;
     color: #F3F3F3;
+    width: auto;
 }
 
 
@@ -140,4 +143,40 @@ ul li a{
     display: flex;
     border-top: 3px solid #2185D5;
     align-items: center;
+}
+
+
+
+
+
+.items-links-footer{
+    display: flex;
+    flex-direction: column;
+    color: #F3F3F3;
+    width: 100%;
+    align-items: start;
+    height: auto;
+    list-style: none;
+    
+   
+   
+}
+
+
+.copyright{
+    border-top:#F3F3F3 3px solid ;
+    justify-content: center;
+    color:  #3A4750;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    height: 40px;
+
+}
+
+
+span a{
+    text-decoration: none;
+    color: #303841;
 }
