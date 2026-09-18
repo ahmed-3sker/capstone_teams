@@ -10,12 +10,12 @@
 <!--
 the color palette
 blue: #2185D5
-gray: #111923
+gray: #3A4750
 dark gray: #303841
 white: #F3F3F3
 -->
-<body class="w-screen min-h-screen bg-linear-to-r from-[#111923] to-[#1a2634] m-0 text-[#f3f3f3]">
-    <div class=" absolute -top-24 -right-24 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl pointer-events-none "></div>
+<body class="w-screen min-h-screen bg-linear-to-r from-[#3A4750] to-[#303841] m-0 text-[#f3f3f3]">
+    <div class=" absolute -top-24 -right-24 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl pointer-events-none"></div>
     <div class=" h-80 w-80 absolute -left-24 -bottom-24 blur-3xl bg-blue-600/20 rounded-full pointer-events-none"></div>
     <div class="flex flex-row min-h-screen  w-full  ">
         <div class="w-1/2 px-20 py-10 relative">
@@ -26,30 +26,60 @@ white: #F3F3F3
                     <p class="text-sm text-[#f3f3f3] tracking-widest font-semibold">CAPSTONE MANAGER</p>
                 </div>
             </header>
-            <h2 class="text-5xl text-[#f3f3f3] ">Welcome To</h2>
-            <h1 class="text-6xl text-[#f3f3f3] mb-10">Capstone <span class="text-[#2185D5] font-bold">Manager</span></h1>
-            <p class="font-semibold text-xl ">Turning Your Ideas Into Tangible Real World Projects</p>
-            <p class="font-semibold text-xl mb-10">Search for a team, join one, and make great Work</p>
-            <img src="../images/search.png" alt="search logo">
-            <p>  Discover and join teams </p>
-            <img src="../images/manage.png" alt="manage logo" >
-            <p>  Manage capstone teams </p>
-            <img src="../images/join.png" alt="join logo" >
-            <p>  create and request teams </p>
 
+            <h2 class="text-5xl text-[#f3f3f3] ml-20 mb-2">Welcome To</h2>
+            <h1 class="text-6xl text-[#f3f3f3] mb-10 ml-20">Capstone <span class="text-[#2185D5] font-bold">Manager</span></h1>
+            <p class="font-semibold text-xl ml-20">Turning Your Ideas Into Tangible Real World Projects</p>
+            <p class="font-semibold text-xl mb-10 ml-20">Search for a team, join one, and make great Work</p>
 
+            <div class="flex flex-col gap-4 mb-20 ml-20">
+                <div class="flex items-center gap-3">
+                    <span class="inline-block w-2 h-2 rounded-full bg-[#2185D5] shrink-0"></span>
+                    <p class="text-lg text-[#f3f3f3] font-semibold">Discover and join teams</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="inline-block w-2 h-2 rounded-full bg-[#2185D5] shrink-0"></span>
+                    <p class="text-lg text-[#f3f3f3] font-semibold">Manage capstone teams</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="inline-block w-2 h-2 rounded-full bg-[#2185D5] shrink-0"></span>
+                    <p class="text-lg text-[#f3f3f3] font-semibold">Create and request teams</p>
+                </div>
+            </div>
+
+            <div class="border-l-2 border-[#2185D5] pl-7 mt-5 font-mono ml-20 font-semibold">
+                <p> > Building tomorrow's minds...</p>
+                <p>One team at a time. <span class="animate-pulse  inline-block w-3 h-5 bg-[#2185D5]"></span></p>
+            </div>
         </div>
-        <div class="w-1/2 flex items-center justify-center">
-            <div>
-                <form>
-                    <h3 class="">Login & Signup</h3>
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                    <a href="forget.html">Forget Password?</a>
-                    <a href="signup.html">Don't have an account? Sign Up Here</a>
-                    <button type="submit" id="Login" >Login</button>
+    
+
+        <div class="w-1/2 flex items-center justify-center"> 
+            <div class="w-full bg-[#303841] max-w-md p-10 rounded-3xl border-[#3A4750] border shadow-2xl backdrop-blur-md">
+
+                <h3 class="text-4xl font-bold py-3 pl-11">Let's<span class="text-[#2185D5]"> Get Started</span></h3>
+                <p class="font-semibold pb-14">Login to your account by your <span class="text-[#2185D5] font-bold">school code</span> and your <span class="text-[#2185D5] font-bold">password</span>.</p>
+
+                <form class="align-center justify-center ">
+                    <div class="flex w-full items-center relative">
+                        <img src="../images/user.png" alt="user icon" class="w-5 h-5 absolute left-7 pointer-events-none">
+                        <input type="text" id="username" placeholder="School Code" name="username" required class="border-2 border-[#7e919f] rounder-2xl rounded-xl w-full h-12 pl-15 text-[#f3f3f3] font-semibold placeholder:text-[#f3f3f3]">
+                    </div>
+                    <p class="pb-10 pl-3 font-semibold text-[#93a6b3]">Use your school code</p>
+
+                    <div class="flex w-full items-center relative">
+                        <img src="../images/password.png" alt="password icon" class="w-5 h-5 absolute left-7 pointer-events-none">
+                        <input type="password" id="password" placeholder="Password" name="password" required class="border-2 border-[#7e919f] rounder-2xl rounded-xl w-full h-12 text-[#f3f3f3] font-semibold pl-15 placeholder:text-[#f3f3f3]">
+                    </div>
+                    <p class="pb-5 pl-3 font-semibold text-[#93a6b3]">Use your password</p>
+
+                    <button type="submit" id="Login" class="block w-full bg-[#2185D5] hover:bg-sky-700 font-bold rounded-2xl h-12 hover:h-13 duration-100">Login</button>
+                    <span class="my-7 block border-t border-[#f3f3f3] w-full"> </span>
+
+                    <div  class=" w-full items-center ">
+                        <a href="signup.html" class="block text-center font-semibold">Don't have an account? <span class="text-[#2185D5] font-bold hover:text-amber-600">Sign Up Here</span></a>
+                        <a href="forget.html" class="block text-center font-semibold text-[#2185D5] hover:text-amber-600">Forget Password</a>
+                    </div>
                 </form>
             </div>
         </div>
