@@ -56,16 +56,25 @@ white: #F3F3F3
 
         <div class="w-1/2 flex items-center justify-center"> 
             <div class="w-full bg-[#303841] max-w-md p-10 rounded-3xl border-[#3A4750] border shadow-2xl backdrop-blur-md">
-                <h3 class="text-4xl font-bold py-3">Let's<span class="text-[#2185D5]"> Get Started</span></h3>
-                <p>Login to your account by your school code and your password.</p>
+
+                <h3 class="text-4xl font-bold py-3 pl-11">Let's<span class="text-[#2185D5]"> Get Started</span></h3>
+                <p class="font-semibold pb-14">Login to your account by your <span class="text-[#2185D5] font-bold">school code</span> and your <span class="text-[#2185D5] font-bold">password</span>.</p>
+
                 <form>
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
+                    <div class="flex w-full items-center relative">
+                        <img src="../images/user.png" alt="user icon" class="w-5 h-5 absolute left-7 pointer-events-none">
+                        <input type="text" id="username" placeholder="School Code" name="username" required class="border-2 border-[#7e919f] rounder-2xl rounded-xl w-full h-12 pl-15 text-[#f3f3f3] font-semibold placeholder:text-[#f3f3f3]">
+                    </div>
+                    <p class="pb-10 pl-3 font-semibold text-[#93a6b3]">Use your school code</p>
+
+                    <div>
+                        <img src="../images/password.png" alt="password icon" class="w-5 h-5 absolute left-17 pointer-events-none">
+                        <input type="password" id="password" placeholder="Password" name="password" required class="border-2 border-[#7e919f] rounder-2xl rounded-xl w-full h-12 text-[#f3f3f3] font-semibold pl-15 placeholder:text-[#f3f3f3]">
+                    </div>
+                    <p class="pb-10 pl-3 font-semibold text-[#93a6b3]">Use your password</p>
+                    <button type="submit" id="Login" >Login</button>
                     <a href="forget.html">Forget Password?</a>
                     <a href="signup.html">Don't have an account? Sign Up Here</a>
-                    <button type="submit" id="Login" >Login</button>
                 </form>
             </div>
         </div>
