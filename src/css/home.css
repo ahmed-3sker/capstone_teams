@@ -97,8 +97,82 @@ ul li a:hover::before {
     color: #F3F3F3;
 }
 
+.hidden-create{
+    width: 100%;
+    height: 500px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 
+.hid-con{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 400px;
+    height: 340px;
+    border: #2185D5 solid 2px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    background-color: #F3F3F3;
+
+
+
+
+
+}
+.hid-inp {
+    box-sizing: border-box;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #303841;
+    padding: 10px;
+    margin: 15px 0;
+    transition: all 1s;
+}
+.hod-inp:focus{
+    box-shadow: #303841 4px 4px;
+}
+
+
+.cre-con{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 20px 0px;
+
+}
+.cre-con .conf{
+    color: #2185D5;
+    background-color: #303841;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: end;
+
+}
+
+
+.cre-con .conf:hover{
+    color: #F3F3F3;
+    background-color: #2185D5;
+   
+
+}
+
+
+
+
+
+
+/* third section */
 .status-team {
     border-top: 3px solid #2185D5;
     display: flex;

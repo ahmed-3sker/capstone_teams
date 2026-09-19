@@ -37,8 +37,8 @@
                 </p>
 
                 <div class="home-btn">
-                    <div class="btn create">Create Team</div>
-                    <div class="btn join"><a href="dashboard.html"> join Team</a> </div>
+                    <button class="btn create" id="create">Create Team</button>
+                   <a href="dashboard.html"> <div class="btn join"> join Team </div></a>
                 </div>
             </div>
            
@@ -47,6 +47,30 @@
         
     </section>
 
+
+
+    <section class="hidden-create" id="hidden-create">
+        <div class="container" style="display: flex; justify-content: center; align-items: center;">
+            <div class="hid-con">
+                <h6 class="text-center"> add your info </h6>
+                <label for="leadername">Enter your name:</label>
+                <input class="hid-inp" id="hid-user" type="text" placeholder="3sker">
+            
+
+                <label for="leadername">Enter your phone number(whatsapp):</label>
+                <input class="hid-inp" id="hid-phone" type="text" placeholder="010********">
+
+                <div class="cre-con">
+                <button class="btn conf ">
+                    Confirm creation of the team 
+                </button>
+            </div> 
+
+            </div>
+        </div>
+       
+
+    </section>
 
 <section class="status-team"> 
     <div class="container d-flex justify-content-center"> 
@@ -127,6 +151,7 @@
 
     </footer>
 
+    <script src="../src/js/home.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
