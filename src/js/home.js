@@ -11,17 +11,32 @@ let hidden_popout =document.getElementById('hidden-create');
 
 let contact_inp= document.getElementById('contact');
 
+let conferm = document.getElementsByClassName('conf')[0];
 
 
 
 create.addEventListener( "click" , function() {
     hidden_popout.style.display='flex';
-    alert('your team has been created.');
     
-});
+})
+
+conferm.addEventListener('click', function(){
+    let user= document.getElementById('hid-user');
+    let phone = document.getElementById('hid-phone');
+    
+   
+    alert('your team has been created.');
+    hidden_popout.style.display='none';
+    member1_inp.value = user.value;
+    contact_inp.value = phone.value;
+    user.value='';
+    phone.value='';
 
 
+    
 
+
+})
 
 
 
