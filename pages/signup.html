@@ -62,11 +62,23 @@ white: #F3F3F3
                 <p class="font-semibold pb-6">Sign up to create a new account with your<span class="text-[#2185D5] font-bold"> school code</span> and your <span class="text-[#2185D5] font-bold">password</span>.</p>
 
                 <form class="align-center justify-center ">
+
+                    <div class="flex w-full items-center relative">
+                        <input type="text" id="name" placeholder="Name" name="name" required class="border-2 border-[#7e919f] rounded-xl w-full h-12 pl-12 text-[#f3f3f3] font-semibold placeholder:text-[#f3f3f3]">
+                    </div>
+                    <p class="mb-4 pl-3 font-semibold text-[#93a6b3]">Write your name</p>
+
                     <div class="flex w-full items-center relative">
                         <img src="../images/user.png" alt="user icon" class="w-5 h-5 absolute left-7 pointer-events-none">
                         <input type="text" id="username" placeholder="School Code" name="username" required class="border-2 border-[#7e919f] rounded-xl w-full h-12 pl-12 text-[#f3f3f3] font-semibold placeholder:text-[#f3f3f3]">
                     </div>
                     <p class="mb-4 pl-3 font-semibold text-[#93a6b3]">Use your school code</p>
+
+                    <div class="flex w-full items-center relative">
+                        <img src="../images/phone.png" alt="user icon" class="w-5 h-5 absolute left-7 pointer-events-none">
+                        <input type="number" id="number" placeholder="Phone Number: 0123456789" name="number" required class="border-2 border-[#7e919f] rounded-xl w-full h-12 pl-12 text-[#f3f3f3] font-semibold placeholder:text-[#f3f3f3]">
+                    </div>
+                    <p class="mb-4 pl-3 font-semibold text-[#93a6b3]">Write your number</p>
 
                     <div class="flex w-full items-center relative">
                         <img src="../images/password.png" alt="password icon" class="w-5 h-5 absolute left-7 pointer-events-none">
@@ -76,7 +88,7 @@ white: #F3F3F3
 
                     <div class="flex w-full items-center relative">
                         <img src="../images/password.png" alt="password icon" class="w-5 h-5 absolute left-7 pointer-events-none">
-                        <input type="password" id="password" placeholder="Confirm your password" name="password" required class="border-2 border-[#7e919f] rounded-xl w-full h-12 text-[#f3f3f3] font-semibold pl-12 placeholder:text-[#f3f3f3]">
+                        <input type="password" id="repeat" placeholder="Confirm your password" name="password" required class="border-2 border-[#7e919f] rounded-xl w-full h-12 text-[#f3f3f3] font-semibold pl-12 placeholder:text-[#f3f3f3]">
                     </div>
                     <p class="pb-5 pl-3 font-semibold text-[#93a6b3]">Config Your password</p>
 

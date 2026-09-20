@@ -7,10 +7,9 @@ form.addEventListener('submit', function(event) {
     const code = document.getElementById('username').value;
     const password = document.getElementById("password").value;
 
-
     // get the saved accounts which will be saved in the local storage
-    const scode = localStorage.getItemById("ucode");
-    const spassword = localStorage.getItemById("upassword");
+    const scode = localStorage.getItem("ucode");
+    const spassword = localStorage.getItem("upassword");
     
 
     // check the user if he has an account or not
