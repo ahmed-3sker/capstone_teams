@@ -98,6 +98,14 @@ confirm_leave.addEventListener('click', function() {
 
 
 
+let user_name = localStorage.getItem('user_name');
+let numb = localStorage.getItem('phone_number');
+let info = document.createElement('div');
+info.className = 'info';
+let data = document.createElement('div');
+data.className = 'data';
+
+
 
 
 

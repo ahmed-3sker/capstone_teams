@@ -20,3 +20,20 @@ form.addEventListener("submit", function(event) {
         alert("The password and its confirmation are diffrene");
     }
 })
+
+
+
+
+
+let create_account = document.getElementById('create_account');
+
+create_account.addEventListener('click', function() {
+
+    let user_name = document.getElementById("name").value;
+    let numb = document.getElementById("number").value;
+
+    localStorage.setItem('user_name', user_name);
+    localStorage.setItem('phone_number', numb);
+
+    window.location.href = '../pages/dashboard.html';
+});
