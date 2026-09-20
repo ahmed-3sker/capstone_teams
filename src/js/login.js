@@ -14,7 +14,7 @@ form.addEventListener('submit', function(event) {
 
     // check the user if he has an account or not
     if (!scode) {
-        alert("You don't have an account, please sign up from the link in the buttom and come again");
+        alert("You don't have an account, Go to sign up and then come back wait for you baby");
         return;
     }
 
