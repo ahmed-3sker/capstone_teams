@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/output.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <title>Capstone Manager</title>
+</head>
+
+<!--
+the color palette
+blue: #2185D5
+gray: #3A4750
+dark gray: #303841
+white: #F3F3F3
+-->
+<body class="w-screen h-screen bg-gradient-to-r from-[#3A4750] to-[#303841] m-0 text-[#f3f3f3] overflow-hidden flex flex-col justify-between">
+    <div class=" absolute -top-24 -right-24 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class=" h-80 w-80 absolute -left-24 -bottom-24 blur-3xl bg-blue-600/20 rounded-full pointer-events-none"></div>
+    <div class="flex-1 flex-row w-full overflow-hidden flex">
+        <div class="w-1/2 px-20 flex flex-col justify-center relative">
+            <header class=" flex flex-row items-center gap-3 mb-6">
+                <img src="../images/logo.png" alt="stem october logo" class="w-16 h-16">
+                <div class="flex flex-col">
+                    <p class=" font-bold text-3xl text-[#2185D5] ">STEM October</p>
+                    <p class="text-sm text-[#f3f3f3] tracking-widest font-semibold">CAPSTONE MANAGER</p>
+                </div>
+            </header>
+
+            <h2 class="text-5xl text-[#f3f3f3]  mb-2">Welcome To</h2>
+            <h1 class="text-6xl text-[#f3f3f3] mb-10 ">Capstone <span class="text-[#2185D5] font-bold">Manager</span></h1>
+            <p class="font-semibold text-xl">Turning Your Ideas Into Tangible Real World Projects</p>
+            <p class="font-semibold text-xl mb-10 ">Search for a team, join one, and make great Work</p>
+
+            <div class="flex flex-col gap-4 mb-6 ">
+                <div class="flex items-center gap-3">
+                    <span class="inline-block w-2 h-2 rounded-full bg-[#2185D5] shrink-0"></span>
+                    <p class="text-lg text-[#f3f3f3] font-semibold">Discover and join teams</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="inline-block w-2 h-2 rounded-full bg-[#2185D5] shrink-0"></span>
+                    <p class="text-lg text-[#f3f3f3] font-semibold">Manage capstone teams</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="inline-block w-2 h-2 rounded-full bg-[#2185D5] shrink-0"></span>
+                    <p class="text-lg text-[#f3f3f3] font-semibold">Create and request teams</p>
+                </div>
+            </div>
+
+            <div class="border-l-2 border-[#2185D5] pl-7 mt-5 font-mono  font-semibold">
+                <p>Building tomorrow's minds...</p>
+                <p>One team at a time. <span class="animate-pulse  inline-block w-3 h-5 bg-[#2185D5]"></span></p>
+            </div>
+        </div>
+    
+
+        <div class="w-1/2 flex items-center justify-center"> 
+            <div class="w-full bg-[#303841] max-w-md p-8 rounded-3xl border-[#3A4750] border shadow-2xl backdrop-blur-md">
+
+                <h3 class="text-4xl font-bold py-3 pl-11">Let's<span class="text-[#2185D5]"> Get Started</span></h3>
+                <p class="font-semibold pb-6">Sign up to create a new account with your<span class="text-[#2185D5] font-bold"> school code</span> and your <span class="text-[#2185D5] font-bold">password</span>.</p>
+
+                <form class="align-center justify-center ">
+                    <div class="flex w-full items-center relative">
+                        <img src="../images/user.png" alt="user icon" class="w-5 h-5 absolute left-7 pointer-events-none">
+                        <input type="text" id="username" placeholder="School Code" name="username" required class="border-2 border-[#7e919f] rounded-xl w-full h-12 pl-12 text-[#f3f3f3] font-semibold placeholder:text-[#f3f3f3]">
+                    </div>
+                    <p class="mb-4 pl-3 font-semibold text-[#93a6b3]">Use your school code</p>
+
+                    <div class="flex w-full items-center relative">
+                        <img src="../images/password.png" alt="password icon" class="w-5 h-5 absolute left-7 pointer-events-none">
+                        <input type="password" id="password" placeholder="set a password" name="password" required class="border-2 border-[#7e919f] rounded-xl w-full h-12 text-[#f3f3f3] font-semibold pl-12 placeholder:text-[#f3f3f3]">
+                    </div>
+                    <p class="pb-5 pl-3 font-semibold text-[#93a6b3]">Use your password</p>
+
+                    <div class="flex w-full items-center relative">
+                        <img src="../images/password.png" alt="password icon" class="w-5 h-5 absolute left-7 pointer-events-none">
+                        <input type="password" id="password" placeholder="Confirm your password" name="password" required class="border-2 border-[#7e919f] rounded-xl w-full h-12 text-[#f3f3f3] font-semibold pl-12 placeholder:text-[#f3f3f3]">
+                    </div>
+                    <p class="pb-5 pl-3 font-semibold text-[#93a6b3]">Config Your password</p>
+
+                    <button type="submit" id="Login" class="block w-full bg-[#2185D5] hover:bg-sky-700 font-bold rounded-2xl h-12 hover:h-13 duration-100">Create Account</button>
+                    <span class="my-7 block border-t border-[#f3f3f3] w-full"> </span>
+
+                    <div  class=" w-full items-center ">
+                        <a href="Login.html" class="block text-center font-semibold">have an account? <span class="text-[#2185D5] font-bold hover:text-amber-600">Login Here</span></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../src/js/signup.js"></script>
+</body>
+</html>
