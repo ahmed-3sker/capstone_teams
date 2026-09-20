@@ -381,4 +381,49 @@ ul li a:hover::before {
 span a{
     text-decoration: none;
     color: #303841;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* dashboard page */
+
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F3F3;
+    color: #303841;
+    border-bottom: #2185D5 2px solid;
+
+}
+
+.reqest-div .request{
+    color: #2185D5;
+    background-color: #303841;
+    width: auto;
+    height: auto;
+
+
+}
+
+.reqest-div .request:hover{
+    color: #F3F3F3;
+    background-color: #2185D5;
+    width: auto;
+    height: auto;
+
+
 }
