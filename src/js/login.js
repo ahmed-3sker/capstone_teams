@@ -1,24 +1,14 @@
 const form = document.querySelector('form');
-
 form.addEventListener('submit', function(event) {
-    event.preventDefault(); // ahhhh first we need to stop page from refreshing
-
-    //the inputs that i will need for detection
+    event.preventDefault(); 
     const code = document.getElementById('username').value;
     const password = document.getElementById("password").value;
-
-    // get the saved accounts which will be saved in the local storage
     const scode = localStorage.getItem("ucode");
     const spassword = localStorage.getItem("upassword");
-    
-
-    // check the user if he has an account or not
     if (!scode) {
         alert("You don't have an account, Go to sign up and then come back wait for you baby");
         return;
     }
-
-    // now if the user have an account this will check if his information is true
     if (code === scode && password === spassword) {
         alert("Login succefully, Welcome bro")
         window.location.href = "home_page.html";

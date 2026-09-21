@@ -24,16 +24,22 @@ form.addEventListener("submit", function(event) {
 
 
 
+let create_account = document.getElementById('login');
 
-let create_account = document.getElementById('create_account');
+if (create_account) {
+    create_account.addEventListener('click', function () {
+        let user_name = document.getElementById("name").value.trim();
+        let numb = document.getElementById("number").value.trim();
 
-create_account.addEventListener('click', function() {
+        if (!user_name || !numb) {
+            alert("Please enter both your name and phone number.");
+            return;
+        }
 
-    let user_name = document.getElementById("name").value;
-    let numb = document.getElementById("number").value;
+        localStorage.setItem('user_name', user_name);
+        localStorage.setItem('phone_number', numb);
+        window.location.href = 'dashboard.html';
+    });
+}
 
-    localStorage.setItem('user_name', user_name);
-    localStorage.setItem('phone_number', numb);
 
-    window.location.href = '../pages/dashboard.html';
-});
