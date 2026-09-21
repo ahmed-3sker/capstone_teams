@@ -15,7 +15,7 @@ let conferm = document.getElementsByClassName('conf')[0];
 
 let leave_form = document.getElementById('hidden-leave');
 let user_leave = document.getElementById('hid-user-leave');
-let code = document.getElementById('hid-code');
+let code2 = document.getElementById('hid-code');
 let confirm_leave = document.getElementsByClassName('conf-leave')[0];
 let leave_btn = document.getElementsByClassName('delete')[0];
 
@@ -94,4 +94,3 @@ confirm_leave.addEventListener('click', function() {
     member4_inp.value=='none';
 
 })
-

@@ -24,22 +24,5 @@ form.addEventListener("submit", function(event) {
 
 
 
-let create_account = document.getElementById('login');
-
-if (create_account) {
-    create_account.addEventListener('click', function () {
-        let user_name = document.getElementById("name").value.trim();
-        let numb = document.getElementById("number").value.trim();
-
-        if (!user_name || !numb) {
-            alert("Please enter both your name and phone number.");
-            return;
-        }
-
-        localStorage.setItem('user_name', user_name);
-        localStorage.setItem('phone_number', numb);
-        window.location.href = 'dashboard.html';
-    });
-}
 
 

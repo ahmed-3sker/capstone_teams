@@ -14,7 +14,7 @@ header{
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    width: 400px;
+    width: 500px;
 
 }
 
@@ -24,7 +24,7 @@ header{
     display: flex;
     justify-content: space-around;
     color: #F3F3F3;
-    width: 400px;
+    width: 500px;
     align-items: center;
     height: 100%;
     list-style: none;
@@ -434,4 +434,12 @@ span a{
     justify-content: space-between; 
     align-items: center;
     width: 400px;
+}
+
+
+
+
+footer{
+    bottom: 0px;
+    top:100%;
 }
